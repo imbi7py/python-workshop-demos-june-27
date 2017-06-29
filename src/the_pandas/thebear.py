@@ -12,18 +12,18 @@ products = pd.DataFrame({'category': ['Cleaning', 'Cleaning', 'Entertainment', '
 #     print(row['category'], row['price'])
 
 # Use `pivot()` to pivot the DataFrame
-# pivot_products = products.pivot(index='category', columns='store', values='price')
-#
-# # Check out the result
+pivot_products = products.pivot(index='category', columns='store', values='price')
+
+# Check out the result
 # print(pivot_products)
 #
 # print()
 #
 #
-# people = pd.DataFrame({'FirstName' : ['John', 'Jane'],
-#                        'LastName' : ['Doe', 'Austen'],
-#                        'BloodType' : ['A-', 'B+'],
-#                        'Weight' : [90, 64]})
+people = pd.DataFrame({'FirstName' : ['John', 'Jane'],
+                       'LastName' : ['Doe', 'Austen'],
+                       'BloodType' : ['A-', 'B+'],
+                       'Weight' : [90, 64]})
 #
 # # Use `melt()` on the `people` DataFrame
-# print(pd.melt(people, id_vars=['FirstName', 'LastName'], var_name='measurements'))
+print(pd.melt(people, id_vars=['FirstName', 'LastName'], var_name='measurements'))

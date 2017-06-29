@@ -2,6 +2,7 @@
 import random
 import sys
 
+# this is a comments
 
 def main():
     if len(sys.argv) != 2:
